@@ -1,0 +1,3387 @@
+[
+  {
+    "model": "User",
+    "table": "home_user",
+    "fields": [
+      {
+        "name": "password",
+        "column": "password",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "last_login",
+        "column": "last_login",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "is_superuser",
+        "column": "is_superuser",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "phone",
+        "column": "phone",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "full_name",
+        "column": "full_name",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "first_name",
+        "column": "first_name",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "last_name",
+        "column": "last_name",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "email",
+        "column": "email",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "avatar",
+        "column": "avatar",
+        "type": "FileField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "role",
+        "column": "role",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "is_active",
+        "column": "is_active",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "is_staff",
+        "column": "is_staff",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "email_verified",
+        "column": "email_verified",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "email_verification_token",
+        "column": "email_verification_token",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "email_verification_token_created",
+        "column": "email_verification_token_created",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "password_reset_token",
+        "column": "password_reset_token",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "password_reset_token_created",
+        "column": "password_reset_token_created",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "updated_at",
+        "column": "updated_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": []
+  },
+  {
+    "model": "Vendor",
+    "table": "home_vendor",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "user",
+        "column": "user_id",
+        "type": "OneToOneField",
+        "primary_key": false,
+        "unique": true,
+        "null": false,
+        "related_model": "User",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "shop_name",
+        "column": "shop_name",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "address",
+        "column": "address",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "city",
+        "column": "city",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "province",
+        "column": "province",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "postal_code",
+        "column": "postal_code",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "country",
+        "column": "country",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "identity_document",
+        "column": "identity_document",
+        "type": "FileField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "business_document",
+        "column": "business_document",
+        "type": "FileField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "avatar",
+        "column": "avatar",
+        "type": "FileField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "logo",
+        "column": "logo",
+        "type": "FileField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "banner",
+        "column": "banner",
+        "type": "FileField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "status",
+        "column": "status",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "commission_rate",
+        "column": "commission_rate",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "shipping_policy",
+        "column": "shipping_policy",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "return_policy",
+        "column": "return_policy",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "terms_conditions",
+        "column": "terms_conditions",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "privacy_policy",
+        "column": "privacy_policy",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "faqs_json",
+        "column": "faqs_json",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "notify_email_new_order",
+        "column": "notify_email_new_order",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "notify_email_order_shipped",
+        "column": "notify_email_order_shipped",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "notify_email_new_review",
+        "column": "notify_email_new_review",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "notify_email_new_message",
+        "column": "notify_email_new_message",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "notify_email_product_approved",
+        "column": "notify_email_product_approved",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "notify_email_marketing",
+        "column": "notify_email_marketing",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "notify_sms_urgent_order",
+        "column": "notify_sms_urgent_order",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "notify_in_app",
+        "column": "notify_in_app",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "notify_sound",
+        "column": "notify_sound",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "digest_type",
+        "column": "digest_type",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "two_factor_enabled",
+        "column": "two_factor_enabled",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "totp_secret",
+        "column": "totp_secret",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "two_factor_confirmed_at",
+        "column": "two_factor_confirmed_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "backup_codes_hashed",
+        "column": "backup_codes_hashed",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "backup_codes_generated_at",
+        "column": "backup_codes_generated_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "phone_verified",
+        "column": "phone_verified",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "primary_color",
+        "column": "primary_color",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "favicon",
+        "column": "favicon",
+        "type": "FileField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "featured_products_json",
+        "column": "featured_products_json",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "updated_at",
+        "column": "updated_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": []
+  },
+  {
+    "model": "SellerApplication",
+    "table": "home_sellerapplication",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "application_id",
+        "column": "application_id",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "user",
+        "column": "user_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": "User",
+        "on_delete": "SET_NULL"
+      },
+      {
+        "name": "full_name",
+        "column": "full_name",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "phone",
+        "column": "phone",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "email",
+        "column": "email",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "shop_name",
+        "column": "shop_name",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "address",
+        "column": "address",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "city",
+        "column": "city",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "identity_document",
+        "column": "identity_document",
+        "type": "FileField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "business_document",
+        "column": "business_document",
+        "type": "FileField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "status",
+        "column": "status",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "rejection_reason",
+        "column": "rejection_reason",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "vendor",
+        "column": "vendor_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": "Vendor",
+        "on_delete": "SET_NULL"
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "reviewed_at",
+        "column": "reviewed_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": []
+  },
+  {
+    "model": "Category",
+    "table": "home_category",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "name",
+        "column": "name",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "slug",
+        "column": "slug",
+        "type": "SlugField",
+        "primary_key": false,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "description",
+        "column": "description",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "icon",
+        "column": "icon",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "level",
+        "column": "level",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "parent",
+        "column": "parent_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": "Category",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "color",
+        "column": "color",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "order",
+        "column": "order",
+        "type": "PositiveIntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "is_active",
+        "column": "is_active",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "meta_title",
+        "column": "meta_title",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "meta_description",
+        "column": "meta_description",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "commission_rate",
+        "column": "commission_rate",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "requires_approval",
+        "column": "requires_approval",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "min_price",
+        "column": "min_price",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "max_price",
+        "column": "max_price",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "updated_at",
+        "column": "updated_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [
+      [
+        "name",
+        "level"
+      ]
+    ],
+    "constraints": [],
+    "indexes": [
+      [
+        "parent"
+      ],
+      [
+        "slug"
+      ],
+      [
+        "level"
+      ],
+      [
+        "is_active"
+      ]
+    ]
+  },
+  {
+    "model": "Product",
+    "table": "home_product",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "name",
+        "column": "name",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "slug",
+        "column": "slug",
+        "type": "SlugField",
+        "primary_key": false,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "description",
+        "column": "description",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "vendor",
+        "column": "vendor_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "Vendor",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "category",
+        "column": "category_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "Category",
+        "on_delete": "PROTECT"
+      },
+      {
+        "name": "price",
+        "column": "price",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "original_price",
+        "column": "original_price",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "stock_quantity",
+        "column": "stock_quantity",
+        "type": "PositiveIntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "low_stock_threshold",
+        "column": "low_stock_threshold",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "cod_available",
+        "column": "cod_available",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "is_featured",
+        "column": "is_featured",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "is_active",
+        "column": "is_active",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "status",
+        "column": "status",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "meta_title",
+        "column": "meta_title",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "meta_description",
+        "column": "meta_description",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "views_count",
+        "column": "views_count",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "sales_count",
+        "column": "sales_count",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "updated_at",
+        "column": "updated_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": [
+      [
+        "category"
+      ],
+      [
+        "vendor"
+      ],
+      [
+        "slug"
+      ],
+      [
+        "status"
+      ],
+      [
+        "is_active"
+      ]
+    ]
+  },
+  {
+    "model": "ProductImage",
+    "table": "home_productimage",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "product",
+        "column": "product_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "Product",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "image",
+        "column": "image",
+        "type": "FileField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "is_primary",
+        "column": "is_primary",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "display_order",
+        "column": "display_order",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": []
+  },
+  {
+    "model": "CategoryAttribute",
+    "table": "home_categoryattribute",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "category",
+        "column": "category_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "Category",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "name",
+        "column": "name",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "attribute_type",
+        "column": "attribute_type",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "is_required",
+        "column": "is_required",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "is_filterable",
+        "column": "is_filterable",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "display_order",
+        "column": "display_order",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "updated_at",
+        "column": "updated_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [
+      [
+        "category",
+        "name"
+      ]
+    ],
+    "constraints": [],
+    "indexes": [
+      [
+        "category"
+      ]
+    ]
+  },
+  {
+    "model": "AttributeValue",
+    "table": "home_attributevalue",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "attribute",
+        "column": "attribute_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "CategoryAttribute",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "value",
+        "column": "value",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "display_order",
+        "column": "display_order",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [
+      [
+        "attribute",
+        "value"
+      ]
+    ],
+    "constraints": [],
+    "indexes": [
+      [
+        "attribute"
+      ]
+    ]
+  },
+  {
+    "model": "ProductAttribute",
+    "table": "home_productattribute",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "product",
+        "column": "product_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "Product",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "attribute",
+        "column": "attribute_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "CategoryAttribute",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "value",
+        "column": "value",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "updated_at",
+        "column": "updated_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [
+      [
+        "product",
+        "attribute"
+      ]
+    ],
+    "constraints": [],
+    "indexes": [
+      [
+        "product"
+      ],
+      [
+        "attribute"
+      ]
+    ]
+  },
+  {
+    "model": "SupportRequest",
+    "table": "home_supportrequest",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "user",
+        "column": "user_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "User",
+        "on_delete": "PROTECT"
+      },
+      {
+        "name": "order",
+        "column": "order_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": "Order",
+        "on_delete": "PROTECT"
+      },
+      {
+        "name": "kind",
+        "column": "kind",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "subject",
+        "column": "subject",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "message",
+        "column": "message",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "status",
+        "column": "status",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "response",
+        "column": "response",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "updated_at",
+        "column": "updated_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": []
+  },
+  {
+    "model": "NewsletterSubscription",
+    "table": "home_newslettersubscription",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "vendor",
+        "column": "vendor_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "Vendor",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "email",
+        "column": "email",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "confirmed_at",
+        "column": "confirmed_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [
+      "unique_shop_subscription"
+    ],
+    "indexes": []
+  },
+  {
+    "model": "AuthSession",
+    "table": "home_authsession",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "user",
+        "column": "user_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "User",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "revoked_at",
+        "column": "revoked_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": []
+  },
+  {
+    "model": "EmailJob",
+    "table": "home_emailjob",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "BigAutoField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "subject",
+        "column": "subject",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "body",
+        "column": "body",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "sender",
+        "column": "sender",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "recipients",
+        "column": "recipients",
+        "type": "JSONField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "attempts",
+        "column": "attempts",
+        "type": "PositiveIntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "available_at",
+        "column": "available_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "sent_at",
+        "column": "sent_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "last_error",
+        "column": "last_error",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": []
+  },
+  {
+    "model": "DeliveryZone",
+    "table": "home_deliveryzone",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "BigAutoField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "province",
+        "column": "province",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "city",
+        "column": "city",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "fee",
+        "column": "fee",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "is_active",
+        "column": "is_active",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [
+      "unique_delivery_city",
+      "nonnegative_delivery_fee"
+    ],
+    "indexes": []
+  },
+  {
+    "model": "Order",
+    "table": "home_order",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "order_id",
+        "column": "order_id",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "customer",
+        "column": "customer_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": "User",
+        "on_delete": "SET_NULL"
+      },
+      {
+        "name": "customer_name",
+        "column": "customer_name",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "customer_phone",
+        "column": "customer_phone",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "total_amount",
+        "column": "total_amount",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "subtotal",
+        "column": "subtotal",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "delivery_fee",
+        "column": "delivery_fee",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "currency",
+        "column": "currency",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "checkout_key",
+        "column": "checkout_key",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": true,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "checkout_hash",
+        "column": "checkout_hash",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "payment_method",
+        "column": "payment_method",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "status",
+        "column": "status",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "delivery_address",
+        "column": "delivery_address",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "city",
+        "column": "city",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "province",
+        "column": "province",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "delivery_notes",
+        "column": "delivery_notes",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "updated_at",
+        "column": "updated_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": []
+  },
+  {
+    "model": "OrderItem",
+    "table": "home_orderitem",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "order",
+        "column": "order_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "Order",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "product",
+        "column": "product_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": "Product",
+        "on_delete": "SET_NULL"
+      },
+      {
+        "name": "vendor",
+        "column": "vendor_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": "Vendor",
+        "on_delete": "PROTECT"
+      },
+      {
+        "name": "confirmed",
+        "column": "confirmed",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "commission_rate",
+        "column": "commission_rate",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "product_name",
+        "column": "product_name",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "quantity",
+        "column": "quantity",
+        "type": "PositiveIntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "price_at_order",
+        "column": "price_at_order",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": []
+  },
+  {
+    "model": "Delivery",
+    "table": "home_delivery",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "order",
+        "column": "order_id",
+        "type": "OneToOneField",
+        "primary_key": false,
+        "unique": true,
+        "null": false,
+        "related_model": "Order",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "rider",
+        "column": "rider_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": "User",
+        "on_delete": "SET_NULL"
+      },
+      {
+        "name": "status",
+        "column": "status",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "collected_amount",
+        "column": "collected_amount",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "delivered_at",
+        "column": "delivered_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "updated_at",
+        "column": "updated_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": []
+  },
+  {
+    "model": "Payout",
+    "table": "home_payout",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "vendor",
+        "column": "vendor_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "Vendor",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "amount",
+        "column": "amount",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "period_start",
+        "column": "period_start",
+        "type": "DateField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "period_end",
+        "column": "period_end",
+        "type": "DateField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "status",
+        "column": "status",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "paid_at",
+        "column": "paid_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "payment_reference",
+        "column": "payment_reference",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "paid_by",
+        "column": "paid_by_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": "User",
+        "on_delete": "PROTECT"
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "updated_at",
+        "column": "updated_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": []
+  },
+  {
+    "model": "SettlementLine",
+    "table": "home_settlementline",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "BigAutoField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "item",
+        "column": "item_id",
+        "type": "OneToOneField",
+        "primary_key": false,
+        "unique": true,
+        "null": false,
+        "related_model": "OrderItem",
+        "on_delete": "PROTECT"
+      },
+      {
+        "name": "vendor",
+        "column": "vendor_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "Vendor",
+        "on_delete": "PROTECT"
+      },
+      {
+        "name": "gross",
+        "column": "gross",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "commission",
+        "column": "commission",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "net",
+        "column": "net",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "payout",
+        "column": "payout_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": "Payout",
+        "on_delete": "PROTECT"
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": []
+  },
+  {
+    "model": "Address",
+    "table": "home_address",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "user",
+        "column": "user_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "User",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "label",
+        "column": "label",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "full_address",
+        "column": "full_address",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "city",
+        "column": "city",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "province",
+        "column": "province",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "postal_code",
+        "column": "postal_code",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "is_default",
+        "column": "is_default",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "updated_at",
+        "column": "updated_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": []
+  },
+  {
+    "model": "Review",
+    "table": "home_review",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "user",
+        "column": "user_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "User",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "product",
+        "column": "product_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "Product",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "order",
+        "column": "order_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "Order",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "rating",
+        "column": "rating",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "comment",
+        "column": "comment",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "updated_at",
+        "column": "updated_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [
+      [
+        "user",
+        "product",
+        "order"
+      ]
+    ],
+    "constraints": [],
+    "indexes": []
+  },
+  {
+    "model": "Cart",
+    "table": "home_cart",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "user",
+        "column": "user_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "User",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "product",
+        "column": "product_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "Product",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "quantity",
+        "column": "quantity",
+        "type": "PositiveIntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "updated_at",
+        "column": "updated_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [
+      [
+        "user",
+        "product"
+      ]
+    ],
+    "constraints": [],
+    "indexes": []
+  },
+  {
+    "model": "Notification",
+    "table": "home_notification",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "user",
+        "column": "user_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "User",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "notification_type",
+        "column": "notification_type",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "title",
+        "column": "title",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "message",
+        "column": "message",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "is_read",
+        "column": "is_read",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "link",
+        "column": "link",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": []
+  },
+  {
+    "model": "CommissionHistory",
+    "table": "home_commissionhistory",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "vendor",
+        "column": "vendor_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "Vendor",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "old_rate",
+        "column": "old_rate",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "new_rate",
+        "column": "new_rate",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "effective_date",
+        "column": "effective_date",
+        "type": "DateField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "reason",
+        "column": "reason",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "changed_by",
+        "column": "changed_by_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": "User",
+        "on_delete": "SET_NULL"
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": [
+      [
+        "vendor",
+        "-created_at"
+      ]
+    ]
+  },
+  {
+    "model": "ReviewModeration",
+    "table": "home_reviewmoderation",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "review",
+        "column": "review_id",
+        "type": "OneToOneField",
+        "primary_key": false,
+        "unique": true,
+        "null": false,
+        "related_model": "Review",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "is_flagged",
+        "column": "is_flagged",
+        "type": "BooleanField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "flag_category",
+        "column": "flag_category",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "reason",
+        "column": "reason",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "flagged_by",
+        "column": "flagged_by_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": "User",
+        "on_delete": "SET_NULL"
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "unflagged_at",
+        "column": "unflagged_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "deletion_reason",
+        "column": "deletion_reason",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "deleted_at",
+        "column": "deleted_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": [
+      [
+        "is_flagged",
+        "-created_at"
+      ],
+      [
+        "flag_category"
+      ]
+    ]
+  },
+  {
+    "model": "VendorAuditLog",
+    "table": "home_vendorauditlog",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "vendor",
+        "column": "vendor_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": "Vendor",
+        "on_delete": "CASCADE"
+      },
+      {
+        "name": "action_type",
+        "column": "action_type",
+        "type": "CharField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "old_value",
+        "column": "old_value",
+        "type": "JSONField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "new_value",
+        "column": "new_value",
+        "type": "JSONField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "reason",
+        "column": "reason",
+        "type": "TextField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "admin_user",
+        "column": "admin_user_id",
+        "type": "ForeignKey",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": "User",
+        "on_delete": "SET_NULL"
+      },
+      {
+        "name": "ip_address",
+        "column": "ip_address",
+        "type": "GenericIPAddressField",
+        "primary_key": false,
+        "unique": false,
+        "null": true,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "created_at",
+        "column": "created_at",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": [
+      [
+        "vendor",
+        "-created_at"
+      ],
+      [
+        "action_type",
+        "-created_at"
+      ]
+    ]
+  },
+  {
+    "model": "AdminDashboardStats",
+    "table": "home_admindashboardstats",
+    "fields": [
+      {
+        "name": "id",
+        "column": "id",
+        "type": "UUIDField",
+        "primary_key": true,
+        "unique": true,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "pending_vendors",
+        "column": "pending_vendors",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "approved_vendors",
+        "column": "approved_vendors",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "suspended_vendors",
+        "column": "suspended_vendors",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "pending_products",
+        "column": "pending_products",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "approved_products",
+        "column": "approved_products",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "rejected_products",
+        "column": "rejected_products",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "pending_orders",
+        "column": "pending_orders",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "active_orders",
+        "column": "active_orders",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "delivered_orders",
+        "column": "delivered_orders",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "flagged_reviews",
+        "column": "flagged_reviews",
+        "type": "IntegerField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "total_commission_collected",
+        "column": "total_commission_collected",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "pending_payouts",
+        "column": "pending_payouts",
+        "type": "DecimalField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      },
+      {
+        "name": "last_updated",
+        "column": "last_updated",
+        "type": "DateTimeField",
+        "primary_key": false,
+        "unique": false,
+        "null": false,
+        "related_model": null,
+        "on_delete": null
+      }
+    ],
+    "unique_together": [],
+    "constraints": [],
+    "indexes": []
+  }
+]

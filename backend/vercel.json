@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "env": {
+    "PYTHONUNBUFFERED": "1"
+  },
+  "builds": [
+    {
+      "src": "Bazar/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.12"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1",
+      "check": true
+    },
+    {
+      "src": "/(.*)",
+      "dest": "Bazar/wsgi.py"
+    }
+  ]
+}

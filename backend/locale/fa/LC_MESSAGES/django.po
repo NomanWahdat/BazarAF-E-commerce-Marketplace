@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BazarAF 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-02 10:00+0000\n"
+"PO-Revision-Date: 2026-05-02 10:00+0000\n"
+"Last-Translator: BazarAF Team <info@bazaraf.com>\n"
+"Language-Team: Dari <dari@bazaraf.com>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: admin_views.py
+msgid "Product Approved ✅"
+msgstr "محصول تایید شد ✅"
+
+msgid "Your product \"%s\" has been approved and is now live on the platform."
+msgstr "محصول شما \"%s\" تایید شد و اکنون در سایت فعال است."
+
+msgid "Product approved successfully"
+msgstr "محصول با موفقیت تایید شد"
+
+msgid "Your product \"%s\" has been rejected."
+msgstr "محصول شما \"%s\" رد شد."
+
+msgid "Product Rejected ❌"
+msgstr "محصول رد شد ❌"
+
+msgid "Product rejected successfully"
+msgstr "محصول با موفقیت رد شد"
+
+msgid " Reason: "
+msgstr " دلیل: "
+
+msgid "No product IDs provided"
+msgstr "هیچ شناسه محصولی ارائه نشده است"
+
+msgid "products approved"
+msgstr "محصولات تایید شدند"
+
+msgid "products rejected"
+msgstr "محصولات رد شدند"
+
+msgid "No products found"
+msgstr "محصولی یافت نشد"
+
+msgid "Failed to load products for moderation"
+msgstr "بارگیری محصولات برای تعدیل ناکام"
+
+msgid "Product Name"
+msgstr "نام محصول"
+
+msgid "Category"
+msgstr "دسته بندی"
+
+msgid "Vendor"
+msgstr "فروشندگان"
+
+msgid "Price"
+msgstr "قیمت"
+
+msgid "Stock"
+msgstr "موجودی"
+
+msgid "Status"
+msgstr "وضعیت"
+
+msgid "Created At"
+msgstr "تاریخ ایجاد"
+
+msgid "Action"
+msgstr "عملیات"
+
+msgid "Approve"
+msgstr "تایید"
+
+msgid "Reject"
+msgstr "رد"
+
+msgid "Edit"
+msgstr "ویرایش"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "pending"
+msgstr "در انتظار"
+
+msgid "approved"
+msgstr "تایید شده"
+
+msgid "rejected"
+msgstr "رد شده"
+
+msgid "Application approved successfully"
+msgstr "درخواست با موفقیت تایید شد"
+
+msgid "Application rejected successfully"
+msgstr "درخواست با موفقیت رد شد"
+
+msgid "Welcome to BazarAF!"
+msgstr "به بازاراف خوش آمدید!"
+
+msgid "Loading..."
+msgstr "در حال بارگیری..."
+
+msgid "Error"
+msgstr "خرابی"
+
+msgid "Success"
+msgstr "موفق"
+
+msgid "Search"
+msgstr "جستجو"
+
+msgid "Filter"
+msgstr "فیلتر"
+
+msgid "Submit"
+msgstr "ارسال"
+
+msgid "Cancel"
+msgstr "لغو"
+
+msgid "Save"
+msgstr "ذخیره"
+
+msgid "Back"
+msgstr "برگشت"
+
+msgid "Next"
+msgstr "بعدی"
+
+msgid "Previous"
+msgstr "قبلی"
+
+msgid "Dashboard"
+msgstr "داشبورد"
+
+msgid "Products"
+msgstr "محصولات"
+
+msgid "Orders"
+msgstr "سفارشات"
+
+msgid "Sellers"
+msgstr "فروشندگان"
+
+msgid "Reviews"
+msgstr "نقدها"
+
+msgid "Settings"
+msgstr "تنظیمات"
+
+msgid "Profile"
+msgstr "پروفایل"
+
+msgid "Logout"
+msgstr "خروج"
+
+msgid "Login"
+msgstr "ورود"
+
+msgid "Register"
+msgstr "ثبت نام"

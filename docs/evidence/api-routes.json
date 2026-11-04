@@ -1,0 +1,1039 @@
+[
+  {
+    "pattern": "api/support/",
+    "name": null,
+    "view": "SupportRequestsView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/stores/<str:identifier>/",
+    "name": null,
+    "view": "StorefrontView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/newsletter/",
+    "name": null,
+    "view": "NewsletterView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/newsletter/confirm/",
+    "name": null,
+    "view": "confirm_newsletter",
+    "actions": {}
+  },
+  {
+    "pattern": "api/orders/quote/",
+    "name": null,
+    "view": "CheckoutQuoteView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/delivery-zones/",
+    "name": null,
+    "view": "DeliveryZonesView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/documents/download/",
+    "name": null,
+    "view": "document_download",
+    "actions": {}
+  },
+  {
+    "pattern": "api/auth/register/",
+    "name": "register",
+    "view": "RegisterView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/auth/login/",
+    "name": "login",
+    "view": "LoginView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/auth/2fa/verify/",
+    "name": "auth-2fa-verify",
+    "view": "TwoFactorVerifyView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/auth/logout/",
+    "name": "logout",
+    "view": "LogoutView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/auth/google/",
+    "name": "google-auth",
+    "view": "GoogleAuthView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/auth/verify-email/",
+    "name": "verify-email",
+    "view": "VerifyEmailView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/auth/resend-verification/",
+    "name": "resend-verification",
+    "view": "ResendVerificationEmailView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/auth/request-password-reset/",
+    "name": "request-password-reset",
+    "view": "RequestPasswordResetView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/auth/reset-password/",
+    "name": "reset-password",
+    "view": "ResetPasswordView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/orders/checkout/",
+    "name": "checkout-order",
+    "view": "CheckoutOrderView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/orders/track/<str:order_id>/",
+    "name": "track-order",
+    "view": "OrderDetailByIdView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/auth/token/",
+    "name": "token_obtain_pair",
+    "view": "LoginView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/auth/token/refresh/",
+    "name": "token_refresh",
+    "view": "TokenRefreshView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/auth/token/verify/",
+    "name": "token_verify",
+    "view": "TokenVerifyView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/dashboard/vendor/",
+    "name": "vendor_dashboard",
+    "view": "VendorDashboardView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/dashboard/",
+    "name": "dashboard",
+    "view": "DashboardView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/logistics/stats/",
+    "name": "logistics-stats",
+    "view": "LogisticsStatsView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/orders/status-counts/",
+    "name": "order-status-counts",
+    "view": "OrderStatusCountsView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/payouts/summary/",
+    "name": "payout-summary",
+    "view": "PayoutSummaryView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/user/profile/",
+    "name": "user-profile",
+    "view": "UserProfileView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/user/change-password/",
+    "name": "change-password",
+    "view": "ChangePasswordView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/user/addresses/",
+    "name": "address-list",
+    "view": "AddressListCreateView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/user/addresses/<uuid:pk>/",
+    "name": "address-detail",
+    "view": "AddressDetailView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/user/orders/",
+    "name": "order-list",
+    "view": "OrderListView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/user/orders/<uuid:pk>/",
+    "name": "order-detail",
+    "view": "OrderDetailView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/user/reviews/",
+    "name": "review-list",
+    "view": "ReviewListView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/user/reviews/<uuid:pk>/",
+    "name": "review-detail",
+    "view": "ReviewDetailView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/user/cart/",
+    "name": "cart",
+    "view": "CartView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/user/cart/<uuid:pk>/",
+    "name": "cart-item",
+    "view": "CartItemView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/vendors/profile/",
+    "name": "vendor-profile",
+    "view": "VendorProfileView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/vendors/settings/",
+    "name": "vendor-settings",
+    "view": "VendorSettingsView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/vendors/change-password/",
+    "name": "vendor-change-password",
+    "view": "ChangePasswordView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/vendors/toggle-2fa/",
+    "name": "vendor-toggle-2fa",
+    "view": "Toggle2FAView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/vendors/2fa/setup/begin/",
+    "name": "vendor-2fa-setup-begin",
+    "view": "TwoFactorSetupBeginView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/vendors/2fa/setup/verify/",
+    "name": "vendor-2fa-setup-verify",
+    "view": "TwoFactorSetupVerifyView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/vendors/2fa/backup-codes/regenerate/",
+    "name": "vendor-2fa-backup-regenerate",
+    "view": "TwoFactorBackupCodesRegenerateView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/vendors/2fa/disable/",
+    "name": "vendor-2fa-disable",
+    "view": "TwoFactorDisableView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/vendors/send-email-verification/",
+    "name": "vendor-send-email-verification",
+    "view": "SendEmailVerificationView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/vendors/send-phone-verification/",
+    "name": "vendor-send-phone-verification",
+    "view": "SendPhoneVerificationView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/vendors/verify-phone-code/",
+    "name": "vendor-verify-phone-code",
+    "view": "VerifyPhoneCodeView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/vendors/logout-all-sessions/",
+    "name": "vendor-logout-all-sessions",
+    "view": "LogoutAllSessionsView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/vendors/logout-session/<str:session_id>/",
+    "name": "vendor-logout-session",
+    "view": "LogoutSessionView",
+    "actions": {}
+  },
+  {
+    "pattern": "api/^users/$",
+    "name": "users-list",
+    "view": "UserViewSet",
+    "actions": {
+      "get": "list",
+      "post": "create"
+    }
+  },
+  {
+    "pattern": "api/^users/me/$",
+    "name": "users-me",
+    "view": "UserViewSet",
+    "actions": {
+      "get": "me"
+    }
+  },
+  {
+    "pattern": "api/^users/update_me/$",
+    "name": "users-update-me",
+    "view": "UserViewSet",
+    "actions": {
+      "put": "update_me",
+      "patch": "update_me"
+    }
+  },
+  {
+    "pattern": "api/^users/(?P<pk>[^/.]+)/$",
+    "name": "users-detail",
+    "view": "UserViewSet",
+    "actions": {
+      "get": "retrieve",
+      "put": "update",
+      "patch": "partial_update",
+      "delete": "destroy"
+    }
+  },
+  {
+    "pattern": "api/^vendors/$",
+    "name": "vendors-list",
+    "view": "VendorViewSet",
+    "actions": {
+      "get": "list",
+      "post": "create"
+    }
+  },
+  {
+    "pattern": "api/^vendors/(?P<pk>[^/.]+)/$",
+    "name": "vendors-detail",
+    "view": "VendorViewSet",
+    "actions": {
+      "get": "retrieve",
+      "put": "update",
+      "patch": "partial_update",
+      "delete": "destroy"
+    }
+  },
+  {
+    "pattern": "api/^vendors/(?P<pk>[^/.]+)/approve/$",
+    "name": "vendors-approve",
+    "view": "VendorViewSet",
+    "actions": {
+      "post": "approve"
+    }
+  },
+  {
+    "pattern": "api/^vendors/(?P<pk>[^/.]+)/products/$",
+    "name": "vendors-products",
+    "view": "VendorViewSet",
+    "actions": {
+      "get": "products"
+    }
+  },
+  {
+    "pattern": "api/^vendors/(?P<pk>[^/.]+)/reject/$",
+    "name": "vendors-reject",
+    "view": "VendorViewSet",
+    "actions": {
+      "post": "reject"
+    }
+  },
+  {
+    "pattern": "api/^vendors/(?P<pk>[^/.]+)/stats/$",
+    "name": "vendors-stats",
+    "view": "VendorViewSet",
+    "actions": {
+      "get": "stats"
+    }
+  },
+  {
+    "pattern": "api/^vendors/(?P<pk>[^/.]+)/suspend/$",
+    "name": "vendors-suspend",
+    "view": "VendorViewSet",
+    "actions": {
+      "post": "suspend"
+    }
+  },
+  {
+    "pattern": "api/^products/$",
+    "name": "products-list",
+    "view": "ProductViewSet",
+    "actions": {
+      "get": "list",
+      "post": "create"
+    }
+  },
+  {
+    "pattern": "api/^products/featured/$",
+    "name": "products-featured",
+    "view": "ProductViewSet",
+    "actions": {
+      "get": "featured"
+    }
+  },
+  {
+    "pattern": "api/^products/search/$",
+    "name": "products-search",
+    "view": "ProductViewSet",
+    "actions": {
+      "get": "search"
+    }
+  },
+  {
+    "pattern": "api/^products/(?P<slug>[\\w-]+)/$",
+    "name": "products-detail",
+    "view": "ProductViewSet",
+    "actions": {
+      "get": "retrieve",
+      "put": "update",
+      "patch": "partial_update",
+      "delete": "destroy"
+    }
+  },
+  {
+    "pattern": "api/^products/(?P<slug>[\\w-]+)/approve/$",
+    "name": "products-approve",
+    "view": "ProductViewSet",
+    "actions": {
+      "post": "approve"
+    }
+  },
+  {
+    "pattern": "api/^products/(?P<slug>[\\w-]+)/increment_views/$",
+    "name": "products-increment-views",
+    "view": "ProductViewSet",
+    "actions": {
+      "post": "increment_views"
+    }
+  },
+  {
+    "pattern": "api/^products/(?P<slug>[\\w-]+)/reject/$",
+    "name": "products-reject",
+    "view": "ProductViewSet",
+    "actions": {
+      "post": "reject"
+    }
+  },
+  {
+    "pattern": "api/^products/(?P<slug>[\\w-]+)/reviews/$",
+    "name": "products-reviews",
+    "view": "ProductViewSet",
+    "actions": {
+      "get": "reviews"
+    }
+  },
+  {
+    "pattern": "api/^products/(?P<slug>[\\w-]+)/toggle_active/$",
+    "name": "products-toggle-active",
+    "view": "ProductViewSet",
+    "actions": {
+      "post": "toggle_active"
+    }
+  },
+  {
+    "pattern": "api/^products/(?P<slug>[\\w-]+)/toggle_featured/$",
+    "name": "products-toggle-featured",
+    "view": "ProductViewSet",
+    "actions": {
+      "post": "toggle_featured"
+    }
+  },
+  {
+    "pattern": "api/^products/(?P<slug>[\\w-]+)/upload_images/$",
+    "name": "products-upload-images",
+    "view": "ProductViewSet",
+    "actions": {
+      "post": "upload_images"
+    }
+  },
+  {
+    "pattern": "api/^categories/$",
+    "name": "category-list",
+    "view": "CategoryViewSet",
+    "actions": {
+      "get": "list",
+      "post": "create"
+    }
+  },
+  {
+    "pattern": "api/^categories/main_categories/$",
+    "name": "category-main-categories",
+    "view": "CategoryViewSet",
+    "actions": {
+      "get": "main_categories"
+    }
+  },
+  {
+    "pattern": "api/^categories/tree/$",
+    "name": "category-tree",
+    "view": "CategoryViewSet",
+    "actions": {
+      "get": "tree"
+    }
+  },
+  {
+    "pattern": "api/^categories/(?P<slug>[^/.]+)/$",
+    "name": "category-detail",
+    "view": "CategoryViewSet",
+    "actions": {
+      "get": "retrieve",
+      "put": "update",
+      "patch": "partial_update",
+      "delete": "destroy"
+    }
+  },
+  {
+    "pattern": "api/^categories/(?P<slug>[^/.]+)/attributes/$",
+    "name": "category-attributes",
+    "view": "CategoryViewSet",
+    "actions": {
+      "get": "attributes"
+    }
+  },
+  {
+    "pattern": "api/^categories/(?P<slug>[^/.]+)/products/$",
+    "name": "category-products",
+    "view": "CategoryViewSet",
+    "actions": {
+      "get": "products"
+    }
+  },
+  {
+    "pattern": "api/^orders/$",
+    "name": "orders-list",
+    "view": "OrderViewSet",
+    "actions": {
+      "get": "list",
+      "post": "create"
+    }
+  },
+  {
+    "pattern": "api/^orders/bulk-update-status/$",
+    "name": "orders-bulk-update-status",
+    "view": "OrderViewSet",
+    "actions": {
+      "post": "bulk_update_status"
+    }
+  },
+  {
+    "pattern": "api/^orders/my_orders/$",
+    "name": "orders-my-orders",
+    "view": "OrderViewSet",
+    "actions": {
+      "get": "my_orders"
+    }
+  },
+  {
+    "pattern": "api/^orders/status-counts/$",
+    "name": "orders-status-counts",
+    "view": "OrderViewSet",
+    "actions": {
+      "get": "status_counts"
+    }
+  },
+  {
+    "pattern": "api/^orders/(?P<pk>[^/.]+)/$",
+    "name": "orders-detail",
+    "view": "OrderViewSet",
+    "actions": {
+      "get": "retrieve",
+      "put": "update",
+      "patch": "partial_update",
+      "delete": "destroy"
+    }
+  },
+  {
+    "pattern": "api/^orders/(?P<pk>[^/.]+)/cancel/$",
+    "name": "orders-cancel",
+    "view": "OrderViewSet",
+    "actions": {
+      "post": "cancel"
+    }
+  },
+  {
+    "pattern": "api/^orders/(?P<pk>[^/.]+)/confirm/$",
+    "name": "orders-confirm",
+    "view": "OrderViewSet",
+    "actions": {
+      "post": "confirm"
+    }
+  },
+  {
+    "pattern": "api/^deliveries/$",
+    "name": "deliveries-list",
+    "view": "DeliveryViewSet",
+    "actions": {
+      "get": "list",
+      "post": "create"
+    }
+  },
+  {
+    "pattern": "api/^deliveries/(?P<pk>[^/.]+)/$",
+    "name": "deliveries-detail",
+    "view": "DeliveryViewSet",
+    "actions": {
+      "get": "retrieve",
+      "put": "update",
+      "patch": "partial_update",
+      "delete": "destroy"
+    }
+  },
+  {
+    "pattern": "api/^deliveries/(?P<pk>[^/.]+)/deliver/$",
+    "name": "deliveries-deliver",
+    "view": "DeliveryViewSet",
+    "actions": {
+      "post": "deliver"
+    }
+  },
+  {
+    "pattern": "api/^deliveries/(?P<pk>[^/.]+)/fail/$",
+    "name": "deliveries-fail",
+    "view": "DeliveryViewSet",
+    "actions": {
+      "post": "fail"
+    }
+  },
+  {
+    "pattern": "api/^deliveries/(?P<pk>[^/.]+)/pickup/$",
+    "name": "deliveries-pickup",
+    "view": "DeliveryViewSet",
+    "actions": {
+      "post": "pickup"
+    }
+  },
+  {
+    "pattern": "api/^payouts/$",
+    "name": "payouts-list",
+    "view": "PayoutViewSet",
+    "actions": {
+      "get": "list",
+      "post": "create"
+    }
+  },
+  {
+    "pattern": "api/^payouts/my_payouts/$",
+    "name": "payouts-my-payouts",
+    "view": "PayoutViewSet",
+    "actions": {
+      "get": "my_payouts"
+    }
+  },
+  {
+    "pattern": "api/^payouts/summary/$",
+    "name": "payouts-summary",
+    "view": "PayoutViewSet",
+    "actions": {
+      "get": "summary"
+    }
+  },
+  {
+    "pattern": "api/^payouts/(?P<pk>[^/.]+)/$",
+    "name": "payouts-detail",
+    "view": "PayoutViewSet",
+    "actions": {
+      "get": "retrieve",
+      "put": "update",
+      "patch": "partial_update",
+      "delete": "destroy"
+    }
+  },
+  {
+    "pattern": "api/^payouts/(?P<pk>[^/.]+)/mark_paid/$",
+    "name": "payouts-mark-paid",
+    "view": "PayoutViewSet",
+    "actions": {
+      "post": "mark_paid"
+    }
+  },
+  {
+    "pattern": "api/^seller-applications/$",
+    "name": "seller-application-list",
+    "view": "SellerApplicationViewSet",
+    "actions": {
+      "get": "list",
+      "post": "create"
+    }
+  },
+  {
+    "pattern": "api/^seller-applications/(?P<pk>[^/.]+)/$",
+    "name": "seller-application-detail",
+    "view": "SellerApplicationViewSet",
+    "actions": {
+      "get": "retrieve",
+      "put": "update",
+      "patch": "partial_update",
+      "delete": "destroy"
+    }
+  },
+  {
+    "pattern": "api/^seller-applications/(?P<pk>[^/.]+)/approve/$",
+    "name": "seller-application-approve",
+    "view": "SellerApplicationViewSet",
+    "actions": {
+      "post": "approve"
+    }
+  },
+  {
+    "pattern": "api/^seller-applications/(?P<pk>[^/.]+)/debug_status/$",
+    "name": "seller-application-debug-status",
+    "view": "SellerApplicationViewSet",
+    "actions": {
+      "get": "debug_status"
+    }
+  },
+  {
+    "pattern": "api/^seller-applications/(?P<pk>[^/.]+)/reject/$",
+    "name": "seller-application-reject",
+    "view": "SellerApplicationViewSet",
+    "actions": {
+      "post": "reject"
+    }
+  },
+  {
+    "pattern": "api/^notifications/$",
+    "name": "notification-list",
+    "view": "NotificationViewSet",
+    "actions": {
+      "get": "list",
+      "post": "create"
+    }
+  },
+  {
+    "pattern": "api/^notifications/mark_all_read/$",
+    "name": "notification-mark-all-read",
+    "view": "NotificationViewSet",
+    "actions": {
+      "post": "mark_all_read"
+    }
+  },
+  {
+    "pattern": "api/^notifications/unread_count/$",
+    "name": "notification-unread-count",
+    "view": "NotificationViewSet",
+    "actions": {
+      "get": "unread_count"
+    }
+  },
+  {
+    "pattern": "api/^notifications/(?P<pk>[^/.]+)/$",
+    "name": "notification-detail",
+    "view": "NotificationViewSet",
+    "actions": {
+      "get": "retrieve",
+      "put": "update",
+      "patch": "partial_update",
+      "delete": "destroy"
+    }
+  },
+  {
+    "pattern": "api/^notifications/(?P<pk>[^/.]+)/mark_as_read/$",
+    "name": "notification-mark-as-read",
+    "view": "NotificationViewSet",
+    "actions": {
+      "post": "mark_as_read"
+    }
+  },
+  {
+    "pattern": "api/^admin/dashboard/order_trends/$",
+    "name": "admin-dashboard-order-trends",
+    "view": "AdminDashboardViewSet",
+    "actions": {
+      "get": "order_trends"
+    }
+  },
+  {
+    "pattern": "api/^admin/dashboard/summary/$",
+    "name": "admin-dashboard-summary",
+    "view": "AdminDashboardViewSet",
+    "actions": {
+      "get": "summary"
+    }
+  },
+  {
+    "pattern": "api/^admin/seller-applications/$",
+    "name": "admin-seller-applications-list",
+    "view": "SellerApplicationAdminViewSet",
+    "actions": {
+      "get": "list",
+      "post": "create"
+    }
+  },
+  {
+    "pattern": "api/^admin/seller-applications/(?P<pk>[^/.]+)/$",
+    "name": "admin-seller-applications-detail",
+    "view": "SellerApplicationAdminViewSet",
+    "actions": {
+      "get": "retrieve",
+      "put": "update",
+      "patch": "partial_update",
+      "delete": "destroy"
+    }
+  },
+  {
+    "pattern": "api/^admin/seller-applications/(?P<pk>[^/.]+)/approve/$",
+    "name": "admin-seller-applications-approve",
+    "view": "SellerApplicationAdminViewSet",
+    "actions": {
+      "post": "approve"
+    }
+  },
+  {
+    "pattern": "api/^admin/seller-applications/(?P<pk>[^/.]+)/reject/$",
+    "name": "admin-seller-applications-reject",
+    "view": "SellerApplicationAdminViewSet",
+    "actions": {
+      "post": "reject"
+    }
+  },
+  {
+    "pattern": "api/^admin/product-moderation/$",
+    "name": "admin-product-moderation-list",
+    "view": "ProductModerationViewSet",
+    "actions": {
+      "get": "list",
+      "post": "create"
+    }
+  },
+  {
+    "pattern": "api/^admin/product-moderation/bulk_approve/$",
+    "name": "admin-product-moderation-bulk-approve",
+    "view": "ProductModerationViewSet",
+    "actions": {
+      "post": "bulk_approve"
+    }
+  },
+  {
+    "pattern": "api/^admin/product-moderation/bulk_reject/$",
+    "name": "admin-product-moderation-bulk-reject",
+    "view": "ProductModerationViewSet",
+    "actions": {
+      "post": "bulk_reject"
+    }
+  },
+  {
+    "pattern": "api/^admin/product-moderation/(?P<pk>[^/.]+)/$",
+    "name": "admin-product-moderation-detail",
+    "view": "ProductModerationViewSet",
+    "actions": {
+      "get": "retrieve",
+      "put": "update",
+      "patch": "partial_update",
+      "delete": "destroy"
+    }
+  },
+  {
+    "pattern": "api/^admin/product-moderation/(?P<pk>[^/.]+)/approve/$",
+    "name": "admin-product-moderation-approve",
+    "view": "ProductModerationViewSet",
+    "actions": {
+      "post": "approve"
+    }
+  },
+  {
+    "pattern": "api/^admin/product-moderation/(?P<pk>[^/.]+)/reject/$",
+    "name": "admin-product-moderation-reject",
+    "view": "ProductModerationViewSet",
+    "actions": {
+      "post": "reject"
+    }
+  },
+  {
+    "pattern": "api/^admin/order-operations/$",
+    "name": "admin-order-operations-list",
+    "view": "OrderOperationsViewSet",
+    "actions": {
+      "get": "list",
+      "post": "create"
+    }
+  },
+  {
+    "pattern": "api/^admin/order-operations/batch_update_status/$",
+    "name": "admin-order-operations-batch-update-status",
+    "view": "OrderOperationsViewSet",
+    "actions": {
+      "post": "batch_update_status"
+    }
+  },
+  {
+    "pattern": "api/^admin/order-operations/(?P<pk>[^/.]+)/$",
+    "name": "admin-order-operations-detail",
+    "view": "OrderOperationsViewSet",
+    "actions": {
+      "get": "retrieve",
+      "put": "update",
+      "patch": "partial_update",
+      "delete": "destroy"
+    }
+  },
+  {
+    "pattern": "api/^admin/order-operations/(?P<pk>[^/.]+)/assign_rider/$",
+    "name": "admin-order-operations-assign-rider",
+    "view": "OrderOperationsViewSet",
+    "actions": {
+      "post": "assign_rider"
+    }
+  },
+  {
+    "pattern": "api/^admin/order-operations/(?P<pk>[^/.]+)/update_status/$",
+    "name": "admin-order-operations-update-status",
+    "view": "OrderOperationsViewSet",
+    "actions": {
+      "post": "update_status"
+    }
+  },
+  {
+    "pattern": "api/^admin/commission-management/$",
+    "name": "admin-commission-management-list",
+    "view": "CommissionManagementViewSet",
+    "actions": {
+      "get": "list",
+      "post": "create"
+    }
+  },
+  {
+    "pattern": "api/^admin/commission-management/(?P<pk>[^/.]+)/$",
+    "name": "admin-commission-management-detail",
+    "view": "CommissionManagementViewSet",
+    "actions": {
+      "get": "retrieve",
+      "put": "update",
+      "patch": "partial_update",
+      "delete": "destroy"
+    }
+  },
+  {
+    "pattern": "api/^admin/commission-management/(?P<pk>[^/.]+)/commission_history/$",
+    "name": "admin-commission-management-commission-history",
+    "view": "CommissionManagementViewSet",
+    "actions": {
+      "get": "commission_history"
+    }
+  },
+  {
+    "pattern": "api/^admin/commission-management/(?P<pk>[^/.]+)/preview_payout_impact/$",
+    "name": "admin-commission-management-preview-payout-impact",
+    "view": "CommissionManagementViewSet",
+    "actions": {
+      "post": "preview_payout_impact"
+    }
+  },
+  {
+    "pattern": "api/^admin/commission-management/(?P<pk>[^/.]+)/update_commission/$",
+    "name": "admin-commission-management-update-commission",
+    "view": "CommissionManagementViewSet",
+    "actions": {
+      "post": "update_commission"
+    }
+  },
+  {
+    "pattern": "api/^admin/review-moderation/$",
+    "name": "admin-review-moderation-list",
+    "view": "ReviewModerationViewSet",
+    "actions": {
+      "get": "list",
+      "post": "create"
+    }
+  },
+  {
+    "pattern": "api/^admin/review-moderation/(?P<pk>[^/.]+)/$",
+    "name": "admin-review-moderation-detail",
+    "view": "ReviewModerationViewSet",
+    "actions": {
+      "get": "retrieve",
+      "put": "update",
+      "patch": "partial_update",
+      "delete": "destroy"
+    }
+  },
+  {
+    "pattern": "api/^admin/review-moderation/(?P<pk>[^/.]+)/delete_review/$",
+    "name": "admin-review-moderation-delete-review",
+    "view": "ReviewModerationViewSet",
+    "actions": {
+      "post": "delete_review"
+    }
+  },
+  {
+    "pattern": "api/^admin/review-moderation/(?P<pk>[^/.]+)/flag_review/$",
+    "name": "admin-review-moderation-flag-review",
+    "view": "ReviewModerationViewSet",
+    "actions": {
+      "post": "flag_review"
+    }
+  },
+  {
+    "pattern": "api/^admin/review-moderation/(?P<pk>[^/.]+)/unflag_review/$",
+    "name": "admin-review-moderation-unflag-review",
+    "view": "ReviewModerationViewSet",
+    "actions": {
+      "post": "unflag_review"
+    }
+  },
+  {
+    "pattern": "api/^admin/vendor-performance/$",
+    "name": "admin-vendor-performance-list",
+    "view": "VendorPerformanceViewSet",
+    "actions": {
+      "get": "list"
+    }
+  },
+  {
+    "pattern": "api/^admin/vendor-performance/(?P<pk>[^/.]+)/$",
+    "name": "admin-vendor-performance-detail",
+    "view": "VendorPerformanceViewSet",
+    "actions": {
+      "get": "retrieve"
+    }
+  },
+  {
+    "pattern": "api/^admin/vendor-performance/(?P<pk>[^/.]+)/performance_metrics/$",
+    "name": "admin-vendor-performance-performance-metrics",
+    "view": "VendorPerformanceViewSet",
+    "actions": {
+      "get": "performance_metrics"
+    }
+  },
+  {
+    "pattern": "api/",
+    "name": "api-root",
+    "view": "APIRootView",
+    "actions": {}
+  }
+]

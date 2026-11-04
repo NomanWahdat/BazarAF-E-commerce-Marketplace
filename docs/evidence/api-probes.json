@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-05",
+  "scope": "Disposable local audit database only; credentials and document tickets omitted.",
+  "checks": [
+    {
+      "check": "Customer can obtain vendor private identity document",
+      "status": 200,
+      "private_fields": [
+        "business_document",
+        "commission_rate",
+        "identity_document",
+        "user"
+      ],
+      "anonymous_download_status": 200,
+      "confirmed_issue": true
+    },
+    {
+      "check": "/auth/user/",
+      "status": 404,
+      "results_type": null
+    },
+    {
+      "check": "/users/me/",
+      "status": 403,
+      "results_type": "NoneType"
+    },
+    {
+      "check": "/payouts/my_payouts/",
+      "status": 200,
+      "results_type": "dict"
+    },
+    {
+      "check": "Deleting a reserved pending order restores stock",
+      "delete_status": 204,
+      "stock_before_delete": 90,
+      "stock_after_delete": 90,
+      "confirmed_issue": true
+    },
+    {
+      "check": "Vendor order detail restricts items to its own vendor",
+      "status": 200,
+      "other_vendor_item_visible": true
+    },
+    {
+      "check": "Commission preview with a nonzero Decimal pending payout",
+      "status": 500
+    }
+  ]
+}

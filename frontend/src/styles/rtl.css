@@ -1,0 +1,156 @@
+/* RTL Support for Pashto and Dari Languages */
+
+:root[dir='rtl'] {
+  --text-direction: right;
+  --opposite-direction: left;
+}
+
+:root[dir='ltr'] {
+  --text-direction: left;
+  --opposite-direction: right;
+}
+
+/* RTL General Styles */
+[dir='rtl'] {
+  direction: rtl;
+  text-align: right;
+}
+
+
+
+/* Flex and Grid adjustments for RTL */
+
+
+[dir='rtl'] .flex-col {
+  flex-direction: column;
+}
+
+/* Margin and Padding adjustments */
+[dir='rtl'] .ml-auto {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+[dir='rtl'] .mr-auto {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+[dir='rtl'] .pl-4 {
+  padding-right: 1rem;
+  padding-left: 0;
+}
+
+[dir='rtl'] .pr-4 {
+  padding-left: 1rem;
+  padding-right: 0;
+}
+
+/* Input fields RTL */
+[dir='rtl'] input,
+[dir='rtl'] textarea,
+[dir='rtl'] select {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Navigation RTL */
+
+
+[dir='rtl'] .navbar-item {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+/* Tables RTL */
+[dir='rtl'] table {
+  direction: rtl;
+}
+
+[dir='rtl'] table tbody tr {
+  direction: rtl;
+}
+
+/* Dropdown and Menu RTL */
+[dir='rtl'] .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+[dir='rtl'] .menu {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Float adjustments */
+[dir='rtl'] .float-left {
+  float: right;
+}
+
+[dir='rtl'] .float-right {
+  float: left;
+}
+
+/* Border adjustments */
+[dir='rtl'] .border-l {
+  border-left: none;
+  border-right: 1px solid;
+}
+
+[dir='rtl'] .border-r {
+  border-right: none;
+  border-left: 1px solid;
+}
+
+/* Transform for RTL icons and elements */
+[dir='rtl'] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+/* Dialog and Modal RTL */
+[dir='rtl'] .dialog-content {
+  direction: rtl;
+}
+
+/* Ensure Arabic/Persian fonts are used for RTL content */
+[dir='rtl'] {
+  font-family: 'Noto Sans Arabic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Badge positioning RTL */
+[dir='rtl'] .badge {
+  margin-right: -0.5rem;
+  margin-left: 0;
+}
+
+/* Form labels RTL */
+[dir='rtl'] label {
+  text-align: right;
+}
+
+/* List item indentation RTL */
+[dir='rtl'] li {
+  margin-left: 0;
+  margin-right: 1.5rem;
+}
+
+/* Progress bar RTL */
+[dir='rtl'] .progress {
+  direction: rtl;
+}
+
+/* Sidebar RTL */
+[dir='rtl'] aside {
+  margin-left: auto;
+  margin-right: 0;
+  border-right: none;
+  border-left: 1px solid;
+}
+
+/* Direction follows the document; identifiers stay readable in both scripts. */
+input[type="email"], input[type="tel"], input[dir="ltr"], [dir="ltr"] { direction: ltr; }
+:root[lang="fa"], :root[lang="ps"] { font-family: "Noto Sans Arabic", Tahoma, Arial, sans-serif; line-height: 1.8; }
+:focus-visible { outline: 3px solid #0d9488; outline-offset: 3px; }
+.skip-link { position: fixed; inset-inline-start: 1rem; top: -6rem; z-index: 1000; padding: .75rem 1rem; background: white; color: #134e4a; }
+.skip-link:focus { top: .5rem; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }

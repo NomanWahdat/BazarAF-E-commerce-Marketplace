@@ -1,0 +1,1343 @@
+[
+  {
+    "path": "backend/Bazar/__init__.py",
+    "lines": 0,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "backend/Bazar/admin_error_handler.py",
+    "lines": 21,
+    "classes": [],
+    "functions": [
+      "init_admin_interface"
+    ]
+  },
+  {
+    "path": "backend/Bazar/admin_middleware.py",
+    "lines": 37,
+    "classes": [
+      "AdminDatabaseErrorMiddleware"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/Bazar/asgi.py",
+    "lines": 16,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "backend/Bazar/cors_middleware.py",
+    "lines": 19,
+    "classes": [
+      "MediaCorsMiddleware"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/Bazar/e2e_settings.py",
+    "lines": 5,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "backend/Bazar/settings.py",
+    "lines": 371,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "backend/Bazar/test_postgres_settings.py",
+    "lines": 3,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "backend/Bazar/test_settings.py",
+    "lines": 17,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "backend/Bazar/urls.py",
+    "lines": 56,
+    "classes": [],
+    "functions": [
+      "public_media",
+      "api_root"
+    ]
+  },
+  {
+    "path": "backend/Bazar/wsgi.py",
+    "lines": 16,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "backend/api/__init__.py",
+    "lines": 0,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "backend/api/urls.py",
+    "lines": 166,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "backend/cleanup_categories.py",
+    "lines": 24,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "backend/delete_user.py",
+    "lines": 0,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "backend/diagnostic.py",
+    "lines": 40,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "backend/home/__init__.py",
+    "lines": 0,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "backend/home/admin.py",
+    "lines": 1231,
+    "classes": [
+      "SellerApplicationAdmin",
+      "UserAdmin",
+      "VendorAdmin",
+      "NotificationAdmin",
+      "CategoryAdmin",
+      "AttributeValueInline",
+      "CategoryAttributeAdmin",
+      "AttributeValueAdmin",
+      "ProductAttributeInline",
+      "ProductAdmin",
+      "ProductAttributeAdmin",
+      "ProductImageAdmin",
+      "OrderAdmin",
+      "OrderItemAdmin",
+      "DeliveryAdmin",
+      "PayoutAdmin",
+      "AddressAdmin",
+      "ReviewAdmin",
+      "CartAdmin",
+      "EnhancedAdminSite",
+      "SupportRequestAdmin",
+      "EmailJobAdmin"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/admin_models.py",
+    "lines": 154,
+    "classes": [
+      "CommissionHistory",
+      "ReviewModeration",
+      "VendorAuditLog",
+      "AdminDashboardStats"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/admin_views.py",
+    "lines": 1114,
+    "classes": [
+      "IsAdminUser",
+      "AdminDashboardSummarySerializer",
+      "CommissionHistorySerializer",
+      "ReviewModerationSerializer",
+      "VendorAuditLogSerializer",
+      "AdminOrderSerializer",
+      "AdminVendorCommissionSerializer",
+      "AdminVendorPerformanceSerializer",
+      "AdminDashboardViewSet",
+      "SellerApplicationAdminViewSet",
+      "ProductModerationViewSet",
+      "OrderOperationsViewSet",
+      "CommissionManagementViewSet",
+      "ReviewModerationViewSet",
+      "VendorPerformanceViewSet"
+    ],
+    "functions": [
+      "_is_uuid"
+    ]
+  },
+  {
+    "path": "backend/home/apps.py",
+    "lines": 12,
+    "classes": [
+      "HomeConfig"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/auth_backend.py",
+    "lines": 49,
+    "classes": [
+      "PhoneAuthenticationBackend"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/authentication.py",
+    "lines": 38,
+    "classes": [
+      "SessionJWTAuthentication",
+      "SessionTokenRefreshSerializer"
+    ],
+    "functions": [
+      "issue_refresh",
+      "check_session"
+    ]
+  },
+  {
+    "path": "backend/home/commerce.py",
+    "lines": 179,
+    "classes": [],
+    "functions": [
+      "delivery_quote",
+      "priced_items",
+      "place_order",
+      "transition_order",
+      "update_delivery",
+      "create_payout",
+      "mark_payout_paid"
+    ]
+  },
+  {
+    "path": "backend/home/emails.py",
+    "lines": 160,
+    "classes": [],
+    "functions": [
+      "_send_email_async",
+      "send_vendor_approval_email",
+      "send_vendor_rejection_email",
+      "send_email_verification_email",
+      "send_password_reset_email"
+    ]
+  },
+  {
+    "path": "backend/home/fields.py",
+    "lines": 18,
+    "classes": [
+      "EncryptedTextField"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/management/__init__.py",
+    "lines": 1,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "backend/home/management/commands/__init__.py",
+    "lines": 1,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "backend/home/management/commands/approve_seller_app.py",
+    "lines": 136,
+    "classes": [
+      "Command"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/management/commands/seed_e2e.py",
+    "lines": 24,
+    "classes": [
+      "Command"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/management/commands/send_queued_mail.py",
+    "lines": 40,
+    "classes": [
+      "Command"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0001_initial.py",
+    "lines": 250,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0002_remove_product_is_active_product_status.py",
+    "lines": 22,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0003_sellerapplication.py",
+    "lines": 38,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0004_notification.py",
+    "lines": 34,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0005_sellerapplication_user.py",
+    "lines": 20,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0006_alter_sellerapplication_vendor.py",
+    "lines": 19,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0007_email_verification_and_password_reset.py",
+    "lines": 38,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0008_category_enhancements.py",
+    "lines": 57,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0009_create_default_categories.py",
+    "lines": 194,
+    "classes": [
+      "Migration"
+    ],
+    "functions": [
+      "create_categories",
+      "delete_categories"
+    ]
+  },
+  {
+    "path": "backend/home/migrations/0010_add_missing_fields.py",
+    "lines": 135,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0011_product_meta_fields.py",
+    "lines": 34,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0012_productimage_fields.py",
+    "lines": 25,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0013_attribute_models.py",
+    "lines": 99,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0014_user_vendor_settings_and_product_category_fix.py",
+    "lines": 192,
+    "classes": [
+      "Migration"
+    ],
+    "functions": [
+      "backfill_product_category"
+    ]
+  },
+  {
+    "path": "backend/home/migrations/0015_alter_productimage_options_and_more.py",
+    "lines": 23,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0016_vendor_two_factor_fields.py",
+    "lines": 31,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0017_add_admin_models.py",
+    "lines": 115,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0018_update_notification_types.py",
+    "lines": 18,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0019_alter_productimage_options_and_more.py",
+    "lines": 214,
+    "classes": [
+      "Migration"
+    ],
+    "functions": [
+      "backfill_unique_slugs"
+    ]
+  },
+  {
+    "path": "backend/home/migrations/0020_order_checkout_hash_order_checkout_key_and_more.py",
+    "lines": 103,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0021_emailjob_authsession.py",
+    "lines": 40,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/0022_payout_paid_by_payout_payment_reference_and_more.py",
+    "lines": 73,
+    "classes": [
+      "Migration"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/migrations/__init__.py",
+    "lines": 0,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "backend/home/models.py",
+    "lines": 978,
+    "classes": [
+      "UserManager",
+      "User",
+      "Vendor",
+      "SellerApplication",
+      "Category",
+      "Product",
+      "ProductImage",
+      "CategoryAttribute",
+      "AttributeValue",
+      "ProductAttribute",
+      "SupportRequest",
+      "NewsletterSubscription",
+      "AuthSession",
+      "EmailJob",
+      "DeliveryZone",
+      "Order",
+      "OrderItem",
+      "Delivery",
+      "Payout",
+      "SettlementLine",
+      "Address",
+      "Review",
+      "Cart",
+      "Notification"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/onboarding.py",
+    "lines": 42,
+    "classes": [],
+    "functions": [
+      "approve_application"
+    ]
+  },
+  {
+    "path": "backend/home/phone.py",
+    "lines": 19,
+    "classes": [],
+    "functions": [
+      "normalize_phone"
+    ]
+  },
+  {
+    "path": "backend/home/production_views.py",
+    "lines": 150,
+    "classes": [
+      "DeliveryZonesView",
+      "CheckoutQuoteView",
+      "SupportRequestSerializer",
+      "SupportRequestsView",
+      "StorefrontView",
+      "NewsletterView"
+    ],
+    "functions": [
+      "health",
+      "document_download",
+      "confirm_newsletter"
+    ]
+  },
+  {
+    "path": "backend/home/serializer.py",
+    "lines": 1280,
+    "classes": [
+      "PhoneValidator",
+      "UserSerializer",
+      "UserCreateSerializer",
+      "UserUpdateSerializer",
+      "VendorSerializer",
+      "VendorCreateSerializer",
+      "VendorUpdateSerializer",
+      "SellerApplicationSerializer",
+      "ProductImageSerializer",
+      "AttributeValueSerializer",
+      "CategoryAttributeSerializer",
+      "ProductAttributeSerializer",
+      "PublicVendorSerializer",
+      "ProductSerializer",
+      "ProductUpdateSerializer",
+      "ProductDetailSerializer",
+      "ProductListSerializer",
+      "ProductCreateSerializer",
+      "OrderItemSerializer",
+      "OrderSerializer",
+      "OrderItemCreateSerializer",
+      "CheckoutAddressSerializer",
+      "CheckoutOrderSerializer",
+      "OrderCreateSerializer",
+      "OrderUpdateSerializer",
+      "DeliverySerializer",
+      "DeliveryCreateSerializer",
+      "DeliveryUpdateSerializer",
+      "PayoutSerializer",
+      "PayoutCreateSerializer",
+      "PayoutUpdateSerializer",
+      "LoginSerializer",
+      "RegisterSerializer",
+      "DashboardStatsSerializer",
+      "VendorStatsSerializer",
+      "OrderStatusSerializer",
+      "UserProfileSerializer",
+      "ChangePasswordSerializer",
+      "AddressSerializer",
+      "ProductReviewSerializer",
+      "ReviewSerializer",
+      "ReviewCreateSerializer",
+      "CartSerializer",
+      "CartCreateSerializer",
+      "CategorySerializer",
+      "CategoryTreeSerializer",
+      "NotificationSerializer"
+    ],
+    "functions": [
+      "_safe_json_list",
+      "_file_url"
+    ]
+  },
+  {
+    "path": "backend/home/signals.py",
+    "lines": 93,
+    "classes": [],
+    "functions": [
+      "create_vendor_when_role_changed_to_vendor",
+      "link_seller_application_to_user_if_authenticated",
+      "notify_admins_new_seller_application",
+      "notify_admins_new_product_submitted"
+    ]
+  },
+  {
+    "path": "backend/home/storage.py",
+    "lines": 26,
+    "classes": [
+      "PrivateDocumentStorage"
+    ],
+    "functions": [
+      "private_document_storage"
+    ]
+  },
+  {
+    "path": "backend/home/tests.py",
+    "lines": 118,
+    "classes": [
+      "AdminGovernanceFlowTests"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/tests_2fa.py",
+    "lines": 152,
+    "classes": [
+      "VendorTwoFactorFlowTests"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/tests_concurrency.py",
+    "lines": 37,
+    "classes": [
+      "CheckoutConcurrencyTests"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/tests_marketplace.py",
+    "lines": 153,
+    "classes": [
+      "MarketplaceRegressionTests"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/throttling.py",
+    "lines": 17,
+    "classes": [
+      "AuthenticationThrottle",
+      "AccountAuthenticationThrottle"
+    ],
+    "functions": []
+  },
+  {
+    "path": "backend/home/two_factor.py",
+    "lines": 79,
+    "classes": [],
+    "functions": [
+      "normalize_auth_code",
+      "generate_totp_secret",
+      "build_totp_uri",
+      "build_qr_data_url",
+      "verify_totp",
+      "generate_backup_codes",
+      "hash_backup_codes",
+      "consume_backup_code"
+    ]
+  },
+  {
+    "path": "backend/home/uploads.py",
+    "lines": 31,
+    "classes": [],
+    "functions": [
+      "validate_document",
+      "validate_image"
+    ]
+  },
+  {
+    "path": "backend/home/vendor_views.py",
+    "lines": 976,
+    "classes": [
+      "VendorOnlyPermission",
+      "VendorProfileView",
+      "VendorSettingsView",
+      "ChangePasswordView",
+      "Toggle2FAView",
+      "TwoFactorSetupBeginView",
+      "TwoFactorSetupVerifyView",
+      "TwoFactorBackupCodesRegenerateView",
+      "TwoFactorDisableView",
+      "SendEmailVerificationView",
+      "SendPhoneVerificationView",
+      "VerifyPhoneCodeView",
+      "LogoutAllSessionsView",
+      "LogoutSessionView"
+    ],
+    "functions": [
+      "_response_error",
+      "_bool",
+      "_cache_key_phone_code",
+      "_cache_key_phone_cooldown",
+      "_cache_key_email_cooldown",
+      "_cache_key_sessions",
+      "_remaining_cooldown_seconds",
+      "_cache_key_2fa_attempts",
+      "_is_2fa_rate_limited",
+      "_parse_faqs",
+      "_parse_featured_product_ids",
+      "_load_featured_product_ids",
+      "_build_security_session_id",
+      "_client_ip",
+      "_simple_device_name",
+      "_register_current_session",
+      "_logout_session_from_cache",
+      "_dispatch_phone_verification_sms"
+    ]
+  },
+  {
+    "path": "backend/home/views.py",
+    "lines": 2608,
+    "classes": [
+      "IsSuperAdmin",
+      "IsAdminUser",
+      "IsVendorUser",
+      "IsAdminOrSuperAdmin",
+      "IsAdminOrSuperAdminOrVendor",
+      "IsOwnerAdminOrSuperAdmin",
+      "IsRiderUser",
+      "IsCustomerUser",
+      "IsOwnerOrAdmin",
+      "StandardResultsSetPagination",
+      "LoginView",
+      "TwoFactorVerifyView",
+      "RegisterView",
+      "GoogleAuthView",
+      "LogoutView",
+      "VerifyEmailView",
+      "ResendVerificationEmailView",
+      "RequestPasswordResetView",
+      "ResetPasswordView",
+      "UserViewSet",
+      "VendorViewSet",
+      "NotificationViewSet",
+      "SellerApplicationViewSet",
+      "ProductViewSet",
+      "CategoryViewSet",
+      "OrderViewSet",
+      "CheckoutOrderView",
+      "OrderDetailByIdView",
+      "DeliveryViewSet",
+      "PayoutViewSet",
+      "DashboardView",
+      "OrderStatusCountsView",
+      "PayoutSummaryView",
+      "LogisticsStatsView",
+      "VendorDashboardView",
+      "UserProfileView",
+      "ChangePasswordView",
+      "AddressListCreateView",
+      "AddressDetailView",
+      "OrderListView",
+      "OrderDetailView",
+      "ReviewListView",
+      "ReviewDetailView",
+      "CartView",
+      "CartItemView"
+    ],
+    "functions": [
+      "_build_2fa_challenge_cache_key",
+      "_create_2fa_challenge_token",
+      "_parse_2fa_challenge_token",
+      "_consume_2fa_challenge_token",
+      "_2fa_verify_rate_limited"
+    ]
+  },
+  {
+    "path": "backend/locale/fa/LC_MESSAGES/django.po",
+    "lines": 171
+  },
+  {
+    "path": "backend/locale/ps/LC_MESSAGES/django.po",
+    "lines": 171
+  },
+  {
+    "path": "backend/manage.py",
+    "lines": 22,
+    "classes": [],
+    "functions": [
+      "main"
+    ]
+  },
+  {
+    "path": "backend/verify_categories.py",
+    "lines": 54,
+    "classes": [],
+    "functions": []
+  },
+  {
+    "path": "frontend/src/app/App.tsx",
+    "lines": 398
+  },
+  {
+    "path": "frontend/src/app/components/AdminPanel.tsx",
+    "lines": 1405
+  },
+  {
+    "path": "frontend/src/app/components/Cart.tsx",
+    "lines": 323
+  },
+  {
+    "path": "frontend/src/app/components/Categories/CategoriesDisplay.tsx",
+    "lines": 249
+  },
+  {
+    "path": "frontend/src/app/components/Categories/CategoryCard.tsx",
+    "lines": 127
+  },
+  {
+    "path": "frontend/src/app/components/Categories/iconMap.ts",
+    "lines": 122
+  },
+  {
+    "path": "frontend/src/app/components/Categories/index.ts",
+    "lines": 6
+  },
+  {
+    "path": "frontend/src/app/components/Checkout.tsx",
+    "lines": 522
+  },
+  {
+    "path": "frontend/src/app/components/CustomerHome.tsx",
+    "lines": 936
+  },
+  {
+    "path": "frontend/src/app/components/LanguageSwitcher.tsx",
+    "lines": 47
+  },
+  {
+    "path": "frontend/src/app/components/OrderTracking.tsx",
+    "lines": 81
+  },
+  {
+    "path": "frontend/src/app/components/ProductDetail.tsx",
+    "lines": 700
+  },
+  {
+    "path": "frontend/src/app/components/ProductListing.tsx",
+    "lines": 271
+  },
+  {
+    "path": "frontend/src/app/components/ProtectedRoute.tsx",
+    "lines": 18
+  },
+  {
+    "path": "frontend/src/app/components/ReviewForm.tsx",
+    "lines": 316
+  },
+  {
+    "path": "frontend/src/app/components/VendorDashboard.tsx",
+    "lines": 2603
+  },
+  {
+    "path": "frontend/src/app/components/figma/ImageWithFallback.tsx",
+    "lines": 48
+  },
+  {
+    "path": "frontend/src/app/components/layout/AdminSidebar.tsx",
+    "lines": 50
+  },
+  {
+    "path": "frontend/src/app/components/layout/BaseHeader.tsx",
+    "lines": 1681
+  },
+  {
+    "path": "frontend/src/app/components/layout/Footer.tsx",
+    "lines": 116
+  },
+  {
+    "path": "frontend/src/app/components/layout/Layout.tsx",
+    "lines": 102
+  },
+  {
+    "path": "frontend/src/app/components/ui/accordion.tsx",
+    "lines": 66
+  },
+  {
+    "path": "frontend/src/app/components/ui/alert-dialog.tsx",
+    "lines": 157
+  },
+  {
+    "path": "frontend/src/app/components/ui/alert.tsx",
+    "lines": 66
+  },
+  {
+    "path": "frontend/src/app/components/ui/aspect-ratio.tsx",
+    "lines": 11
+  },
+  {
+    "path": "frontend/src/app/components/ui/avatar.tsx",
+    "lines": 53
+  },
+  {
+    "path": "frontend/src/app/components/ui/badge.tsx",
+    "lines": 46
+  },
+  {
+    "path": "frontend/src/app/components/ui/breadcrumb.tsx",
+    "lines": 109
+  },
+  {
+    "path": "frontend/src/app/components/ui/button.tsx",
+    "lines": 58
+  },
+  {
+    "path": "frontend/src/app/components/ui/calendar.tsx",
+    "lines": 75
+  },
+  {
+    "path": "frontend/src/app/components/ui/card.tsx",
+    "lines": 92
+  },
+  {
+    "path": "frontend/src/app/components/ui/carousel.tsx",
+    "lines": 241
+  },
+  {
+    "path": "frontend/src/app/components/ui/chart.tsx",
+    "lines": 353
+  },
+  {
+    "path": "frontend/src/app/components/ui/checkbox.tsx",
+    "lines": 32
+  },
+  {
+    "path": "frontend/src/app/components/ui/collapsible.tsx",
+    "lines": 33
+  },
+  {
+    "path": "frontend/src/app/components/ui/command.tsx",
+    "lines": 177
+  },
+  {
+    "path": "frontend/src/app/components/ui/context-menu.tsx",
+    "lines": 252
+  },
+  {
+    "path": "frontend/src/app/components/ui/dialog.tsx",
+    "lines": 135
+  },
+  {
+    "path": "frontend/src/app/components/ui/drawer.tsx",
+    "lines": 132
+  },
+  {
+    "path": "frontend/src/app/components/ui/dropdown-menu.tsx",
+    "lines": 257
+  },
+  {
+    "path": "frontend/src/app/components/ui/form.tsx",
+    "lines": 168
+  },
+  {
+    "path": "frontend/src/app/components/ui/hover-card.tsx",
+    "lines": 44
+  },
+  {
+    "path": "frontend/src/app/components/ui/input-otp.tsx",
+    "lines": 77
+  },
+  {
+    "path": "frontend/src/app/components/ui/input.tsx",
+    "lines": 21
+  },
+  {
+    "path": "frontend/src/app/components/ui/label.tsx",
+    "lines": 24
+  },
+  {
+    "path": "frontend/src/app/components/ui/menubar.tsx",
+    "lines": 276
+  },
+  {
+    "path": "frontend/src/app/components/ui/navigation-menu.tsx",
+    "lines": 168
+  },
+  {
+    "path": "frontend/src/app/components/ui/pagination.tsx",
+    "lines": 127
+  },
+  {
+    "path": "frontend/src/app/components/ui/popover.tsx",
+    "lines": 48
+  },
+  {
+    "path": "frontend/src/app/components/ui/progress.tsx",
+    "lines": 31
+  },
+  {
+    "path": "frontend/src/app/components/ui/radio-group.tsx",
+    "lines": 45
+  },
+  {
+    "path": "frontend/src/app/components/ui/resizable.tsx",
+    "lines": 56
+  },
+  {
+    "path": "frontend/src/app/components/ui/scroll-area.tsx",
+    "lines": 58
+  },
+  {
+    "path": "frontend/src/app/components/ui/select.tsx",
+    "lines": 189
+  },
+  {
+    "path": "frontend/src/app/components/ui/separator.tsx",
+    "lines": 28
+  },
+  {
+    "path": "frontend/src/app/components/ui/sheet.tsx",
+    "lines": 139
+  },
+  {
+    "path": "frontend/src/app/components/ui/sidebar.tsx",
+    "lines": 726
+  },
+  {
+    "path": "frontend/src/app/components/ui/skeleton.tsx",
+    "lines": 13
+  },
+  {
+    "path": "frontend/src/app/components/ui/slider.tsx",
+    "lines": 63
+  },
+  {
+    "path": "frontend/src/app/components/ui/sonner.tsx",
+    "lines": 25
+  },
+  {
+    "path": "frontend/src/app/components/ui/switch.tsx",
+    "lines": 31
+  },
+  {
+    "path": "frontend/src/app/components/ui/table.tsx",
+    "lines": 116
+  },
+  {
+    "path": "frontend/src/app/components/ui/tabs.tsx",
+    "lines": 66
+  },
+  {
+    "path": "frontend/src/app/components/ui/textarea.tsx",
+    "lines": 18
+  },
+  {
+    "path": "frontend/src/app/components/ui/toggle-group.tsx",
+    "lines": 73
+  },
+  {
+    "path": "frontend/src/app/components/ui/toggle.tsx",
+    "lines": 47
+  },
+  {
+    "path": "frontend/src/app/components/ui/tooltip.tsx",
+    "lines": 61
+  },
+  {
+    "path": "frontend/src/app/components/ui/use-mobile.ts",
+    "lines": 21
+  },
+  {
+    "path": "frontend/src/app/components/ui/utils.ts",
+    "lines": 6
+  },
+  {
+    "path": "frontend/src/app/data/mock-data.ts",
+    "lines": 321
+  },
+  {
+    "path": "frontend/src/app/hooks/useDebounce.ts",
+    "lines": 14
+  },
+  {
+    "path": "frontend/src/app/pages/vendor/VendorProfilePage.tsx",
+    "lines": 566
+  },
+  {
+    "path": "frontend/src/app/pages/vendor/VendorReviewsPage.tsx",
+    "lines": 173
+  },
+  {
+    "path": "frontend/src/app/pages/vendor/VendorSettingsPage.tsx",
+    "lines": 1782
+  },
+  {
+    "path": "frontend/src/components/ErrorBoundary.tsx",
+    "lines": 50
+  },
+  {
+    "path": "frontend/src/components/MarketplaceBar.tsx",
+    "lines": 32
+  },
+  {
+    "path": "frontend/src/components/SupportRequests.tsx",
+    "lines": 46
+  },
+  {
+    "path": "frontend/src/components/customer/CategoryGrid.tsx",
+    "lines": 91
+  },
+  {
+    "path": "frontend/src/components/customer/ProductCard.tsx",
+    "lines": 249
+  },
+  {
+    "path": "frontend/src/components/customer/SearchBar.tsx",
+    "lines": 223
+  },
+  {
+    "path": "frontend/src/i18n.ts",
+    "lines": 2053
+  },
+  {
+    "path": "frontend/src/locales/marketplace.ts",
+    "lines": 103
+  },
+  {
+    "path": "frontend/src/main.tsx",
+    "lines": 13
+  },
+  {
+    "path": "frontend/src/pages/AdminCommissionManagement.tsx",
+    "lines": 563
+  },
+  {
+    "path": "frontend/src/pages/AdminDashboard.tsx",
+    "lines": 403
+  },
+  {
+    "path": "frontend/src/pages/AdminOrderOperations.tsx",
+    "lines": 762
+  },
+  {
+    "path": "frontend/src/pages/AdminProductModeration.tsx",
+    "lines": 776
+  },
+  {
+    "path": "frontend/src/pages/AdminReviewModeration.tsx",
+    "lines": 566
+  },
+  {
+    "path": "frontend/src/pages/AdminSellerApplications.tsx",
+    "lines": 437
+  },
+  {
+    "path": "frontend/src/pages/AdminVendorPerformance.tsx",
+    "lines": 505
+  },
+  {
+    "path": "frontend/src/pages/BecomeSeller.tsx",
+    "lines": 308
+  },
+  {
+    "path": "frontend/src/pages/CategoryManagement.tsx",
+    "lines": 538
+  },
+  {
+    "path": "frontend/src/pages/ForgotPassword.tsx",
+    "lines": 187
+  },
+  {
+    "path": "frontend/src/pages/HelpSupport.tsx",
+    "lines": 277
+  },
+  {
+    "path": "frontend/src/pages/Landing.tsx",
+    "lines": 112
+  },
+  {
+    "path": "frontend/src/pages/Login.tsx",
+    "lines": 447
+  },
+  {
+    "path": "frontend/src/pages/MyOrders.tsx",
+    "lines": 333
+  },
+  {
+    "path": "frontend/src/pages/MyProfile.tsx",
+    "lines": 513
+  },
+  {
+    "path": "frontend/src/pages/MyReviews.tsx",
+    "lines": 272
+  },
+  {
+    "path": "frontend/src/pages/Notifications.tsx",
+    "lines": 210
+  },
+  {
+    "path": "frontend/src/pages/ProductApproval.tsx",
+    "lines": 314
+  },
+  {
+    "path": "frontend/src/pages/ProductDetail.tsx",
+    "lines": 678
+  },
+  {
+    "path": "frontend/src/pages/ProductListing.tsx",
+    "lines": 392
+  },
+  {
+    "path": "frontend/src/pages/Profile.tsx",
+    "lines": 367
+  },
+  {
+    "path": "frontend/src/pages/ResetPassword.tsx",
+    "lines": 217
+  },
+  {
+    "path": "frontend/src/pages/SellerRegistration.tsx",
+    "lines": 644
+  },
+  {
+    "path": "frontend/src/pages/SignUp.tsx",
+    "lines": 529
+  },
+  {
+    "path": "frontend/src/pages/StoreFront.tsx",
+    "lines": 924
+  },
+  {
+    "path": "frontend/src/pages/VendorOrderDetail.tsx",
+    "lines": 192
+  },
+  {
+    "path": "frontend/src/pages/VerifyEmail.tsx",
+    "lines": 116
+  },
+  {
+    "path": "frontend/src/pages/VerifyEmailPending.tsx",
+    "lines": 124
+  },
+  {
+    "path": "frontend/src/pages/Wishlist.tsx",
+    "lines": 237
+  },
+  {
+    "path": "frontend/src/pages/addProduct.tsx",
+    "lines": 591
+  },
+  {
+    "path": "frontend/src/routes/adminRoutes.tsx",
+    "lines": 109
+  },
+  {
+    "path": "frontend/src/services/admin-workflows-service.ts",
+    "lines": 0
+  },
+  {
+    "path": "frontend/src/services/adminService.ts",
+    "lines": 185
+  },
+  {
+    "path": "frontend/src/services/api.ts",
+    "lines": 188
+  },
+  {
+    "path": "frontend/src/services/categoryApi.ts",
+    "lines": 361
+  },
+  {
+    "path": "frontend/src/services/dashboard-service.ts",
+    "lines": 99
+  },
+  {
+    "path": "frontend/src/services/order-service.ts",
+    "lines": 111
+  },
+  {
+    "path": "frontend/src/services/payout-service.ts",
+    "lines": 130
+  },
+  {
+    "path": "frontend/src/services/product-service.ts",
+    "lines": 162
+  },
+  {
+    "path": "frontend/src/services/productsAPI.ts",
+    "lines": 169
+  },
+  {
+    "path": "frontend/src/services/vendor-service.ts",
+    "lines": 57
+  },
+  {
+    "path": "frontend/src/services/vendorAPI.ts",
+    "lines": 358
+  },
+  {
+    "path": "frontend/src/styles/fonts.css",
+    "lines": 27
+  },
+  {
+    "path": "frontend/src/styles/index.css",
+    "lines": 4
+  },
+  {
+    "path": "frontend/src/styles/rtl.css",
+    "lines": 156
+  },
+  {
+    "path": "frontend/src/styles/tailwind.css",
+    "lines": 4
+  },
+  {
+    "path": "frontend/src/styles/theme.css",
+    "lines": 192
+  },
+  {
+    "path": "frontend/src/types/api.ts",
+    "lines": 149
+  },
+  {
+    "path": "frontend/src/types/category.ts",
+    "lines": 181
+  },
+  {
+    "path": "frontend/src/utils/ProtectedRoute.tsx",
+    "lines": 24
+  },
+  {
+    "path": "frontend/src/utils/auth.ts",
+    "lines": 64
+  },
+  {
+    "path": "frontend/src/utils/imageUtils.ts",
+    "lines": 74
+  },
+  {
+    "path": "frontend/src/utils/locale.ts",
+    "lines": 20
+  },
+  {
+    "path": "frontend/src/utils/wishlist.ts",
+    "lines": 79
+  },
+  {
+    "path": "frontend/src/vite-env.d.ts",
+    "lines": 9
+  }
+]

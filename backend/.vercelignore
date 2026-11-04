@@ -1,0 +1,12 @@
+.venv
+venv
+.env
+.env.local
+.env.*.local
+debug.log
+*.sqlite3
+media/
+.git
+.gitignore
+README.md
+SELLER_APPROVAL_FIX_PRODUCTION.md

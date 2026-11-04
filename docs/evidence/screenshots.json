@@ -1,0 +1,621 @@
+{
+  "date": "2026-11-05",
+  "data": "Synthetic fixtures in a temporary SQLite database. No mocked API responses. External requests blocked; image placeholders are genuine UI states.",
+  "captures": [
+    {
+      "file": "homepage.png",
+      "route": "/home",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/home",
+      "height": 6557,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 6557
+      }
+    },
+    {
+      "file": "product-listing.png",
+      "route": "/products",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/products",
+      "height": 1646,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1646
+      }
+    },
+    {
+      "file": "product-details.png",
+      "route": "/product/e2e-tea",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/product/e2e-tea",
+      "height": 1868,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1868
+      }
+    },
+    {
+      "file": "product-search.png",
+      "route": "/products?search=tea",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/products",
+      "height": 1261,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1261
+      }
+    },
+    {
+      "file": "login.png",
+      "route": "/login",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/login",
+      "height": 1050,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "registration.png",
+      "route": "/signup",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/signup",
+      "height": 1050,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "seller-registration.png",
+      "route": "/seller-registration",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/seller-registration",
+      "height": 1135,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1135
+      }
+    },
+    {
+      "file": "vendor-storefront.png",
+      "route": "/store/kabul-test-shop",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/store/kabul-test-shop",
+      "height": 3917,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 3917
+      }
+    },
+    {
+      "file": "about.png",
+      "route": "/about",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/about",
+      "height": 1050,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "customer-profile.png",
+      "route": "/profile",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/profile",
+      "height": 1305,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1305
+      }
+    },
+    {
+      "file": "customer-order-history.png",
+      "route": "/orders",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/orders",
+      "height": 2627,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 2627
+      }
+    },
+    {
+      "file": "notifications.png",
+      "route": "/notifications",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/notifications",
+      "height": 1552,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1552
+      }
+    },
+    {
+      "file": "support.png",
+      "route": "/help-support",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/help-support",
+      "height": 2298,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 2298
+      }
+    },
+    {
+      "file": "shopping-cart.png",
+      "route": "/cart",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/cart",
+      "height": 1615,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1615
+      }
+    },
+    {
+      "file": "checkout.png",
+      "route": "/checkout",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/checkout",
+      "height": 1692,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1692
+      }
+    },
+    {
+      "file": "vendor-dashboard.png",
+      "route": "/vendor",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/vendor",
+      "height": 1909,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1909
+      }
+    },
+    {
+      "file": "vendor-product-management.png",
+      "route": "/vendor?tab=products",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/vendor",
+      "height": 1867,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1867
+      }
+    },
+    {
+      "file": "vendor-order-management.png",
+      "route": "/vendor?tab=orders",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/vendor",
+      "height": 1523,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1523
+      }
+    },
+    {
+      "file": "vendor-earnings.png",
+      "route": "/vendor?tab=earnings",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/vendor",
+      "height": 1800,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1800
+      }
+    },
+    {
+      "file": "vendor-add-product.png",
+      "route": "/vendor/add-product",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/vendor/add-product",
+      "height": 1796,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1796
+      }
+    },
+    {
+      "file": "vendor-settings.png",
+      "route": "/vendor/settings",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/vendor/settings",
+      "height": 2045,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 2045
+      }
+    },
+    {
+      "file": "vendor-reviews.png",
+      "route": "/vendor/reviews",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/vendor/reviews",
+      "height": 1546,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1546
+      }
+    },
+    {
+      "file": "admin-dashboard.png",
+      "route": "/admin",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/admin",
+      "height": 1473,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1473
+      }
+    },
+    {
+      "file": "admin-seller-applications.png",
+      "route": "/admin/seller-applications",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/admin/seller-applications",
+      "height": 1050,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "admin-product-moderation.png",
+      "route": "/admin/product-moderation",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/admin/product-moderation",
+      "height": 1050,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "admin-order-management.png",
+      "route": "/admin/order-operations",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/admin/order-operations",
+      "height": 1050,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "admin-commissions.png",
+      "route": "/admin/commission-management",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/admin/commission-management",
+      "height": 1050,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "admin-review-moderation.png",
+      "route": "/admin/review-moderation",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/admin/review-moderation",
+      "height": 1050,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "admin-vendor-performance.png",
+      "route": "/admin/vendor-performance",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/admin/vendor-performance",
+      "height": 1050,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "admin-categories.png",
+      "route": "/admin/categories",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/admin/categories",
+      "height": 1223,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1223
+      }
+    },
+    {
+      "file": "admin-legacy.png",
+      "route": "/admin-legacy",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/admin-legacy",
+      "height": 1506,
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1506
+      }
+    },
+    {
+      "file": "django-admin-dashboard.png",
+      "route": "http://127.0.0.1:8001/admin/",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "source": "Supplemental real browser capture; synthetic data only.",
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1246
+      }
+    },
+    {
+      "file": "admin-user-management.png",
+      "route": "http://127.0.0.1:8001/admin/home/user/",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "source": "Supplemental real browser capture; synthetic data only.",
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1115
+      }
+    },
+    {
+      "file": "checkout-confirmation.png",
+      "route": "/checkout (server quote confirmation)",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "source": "Supplemental real browser capture; synthetic data only.",
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1832
+      }
+    },
+    {
+      "file": "order-tracking.png",
+      "route": "/order-tracking/{synthetic-order-reference}",
+      "viewport": "1440x1000",
+      "fullPage": true,
+      "finalPath": "/order-tracking/{synthetic-order-reference}",
+      "imageDimensions": {
+        "width": 1440,
+        "height": 1988
+      }
+    },
+    {
+      "file": "login-dari-mobile.png",
+      "route": "/login (Dari)",
+      "viewport": "390x844",
+      "fullPage": true,
+      "finalPath": "/login",
+      "imageDimensions": {
+        "width": 390,
+        "height": 907
+      }
+    }
+  ],
+  "observations": [
+    {
+      "route": "/home",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/products",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/product/e2e-tea",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/products?search=tea",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/login",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/signup",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/seller-registration",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/store/kabul-test-shop",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/about",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/profile",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/orders",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/notifications",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/help-support",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/cart",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/checkout",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/vendor",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/vendor?tab=products",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/vendor?tab=orders",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/vendor?tab=earnings",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/vendor/add-product",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/vendor/settings",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/vendor/reviews",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/admin",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/admin/seller-applications",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/admin/product-moderation",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/admin/order-operations",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/admin/commission-management",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/admin/review-moderation",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/admin/vendor-performance",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/admin/categories",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    },
+    {
+      "route": "/admin-legacy",
+      "errors": [],
+      "apiFailures": [],
+      "hasErrorMessage": false
+    }
+  ]
+}

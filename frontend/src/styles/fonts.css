@@ -1,0 +1,27 @@
+/* Import Google Fonts for better language support */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+/* Font family definitions for different languages */
+:root {
+  --font-primary: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-arabic: 'Noto Sans Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Apply Arabic font for RTL languages */
+[dir='rtl'] {
+  font-family: var(--font-arabic);
+}
+
+[dir='ltr'] {
+  font-family: var(--font-primary);
+}
+
+/* Ensure body and html use the correct font */
+html, body {
+  font-family: var(--font-primary);
+}
+
+[dir='rtl'] html,
+[dir='rtl'] body {
+  font-family: var(--font-arabic);
+}

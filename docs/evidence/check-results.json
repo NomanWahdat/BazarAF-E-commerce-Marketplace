@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-05",
+  "dependencies_installed_or_upgraded": false,
+  "production_services_contacted_for_mutation": false,
+  "django_check": "passed",
+  "migration_consistency": "no changes detected",
+  "sqlite_fresh_migration": "passed with PYTHONIOENCODING=utf-8; initial cp1252 output failed in 0009",
+  "backend_tests": {
+    "discovered": 28,
+    "passed": 27,
+    "skipped": 1,
+    "skip_reason": "PostgreSQL row-lock test not run on SQLite"
+  },
+  "typecheck": "passed",
+  "build": {
+    "result": "passed",
+    "main_js_kb": 651.73,
+    "main_js_gzip_kb": 188.04,
+    "warning": "chunk exceeds 500 kB; initial sandbox esbuild resolution blocked, reviewed rerun succeeded"
+  },
+  "playwright": {
+    "passed": 5,
+    "live_checkout_enabled": true,
+    "other_four_tests": "UI checks including mocked API responses; not four complete backend journeys"
+  },
+  "screenshots": 36,
+  "mermaid_diagrams": 11,
+  "targeted_probe_evidence": "api-probes.json"
+}

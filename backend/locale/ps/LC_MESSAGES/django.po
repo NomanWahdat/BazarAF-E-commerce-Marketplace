@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BazarAF 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-02 10:00+0000\n"
+"PO-Revision-Date: 2026-05-02 10:00+0000\n"
+"Last-Translator: BazarAF Team <info@bazaraf.com>\n"
+"Language-Team: Pashto <pashto@bazaraf.com>\n"
+"Language: ps\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: admin_views.py
+msgid "Product Approved ✅"
+msgstr "توليد منظور شو ✅"
+
+msgid "Your product \"%s\" has been approved and is now live on the platform."
+msgstr "ستاسو توليد \"%s\" منظور شو او اوس په پلېټفارم کې زنده دي."
+
+msgid "Product approved successfully"
+msgstr "توليد بریالي منظور شو"
+
+msgid "Your product \"%s\" has been rejected."
+msgstr "ستاسو توليد \"%s\" رد شو."
+
+msgid "Product Rejected ❌"
+msgstr "توليد رد شو ❌"
+
+msgid "Product rejected successfully"
+msgstr "توليد بریالي رد شو"
+
+msgid " Reason: "
+msgstr " دليل: "
+
+msgid "No product IDs provided"
+msgstr "د توليد هيچ شناخت وړانديز نشو کړ"
+
+msgid "products approved"
+msgstr "توليدات منظور شول"
+
+msgid "products rejected"
+msgstr "توليدات رد شول"
+
+msgid "No products found"
+msgstr "هيچ توليد پيدا نشو"
+
+msgid "Failed to load products for moderation"
+msgstr "د تعديل لپاره توليدات بار کول ناکام"
+
+msgid "Product Name"
+msgstr "د توليد نوم"
+
+msgid "Category"
+msgstr "ډول"
+
+msgid "Vendor"
+msgstr "پلورونکي"
+
+msgid "Price"
+msgstr "قیمت"
+
+msgid "Stock"
+msgstr "ذخیره"
+
+msgid "Status"
+msgstr "حالت"
+
+msgid "Created At"
+msgstr "رامنځته شوي"
+
+msgid "Action"
+msgstr "عمل"
+
+msgid "Approve"
+msgstr "منظورولي"
+
+msgid "Reject"
+msgstr "رد کول"
+
+msgid "Edit"
+msgstr "سمون"
+
+msgid "Delete"
+msgstr "ړمه کول"
+
+msgid "pending"
+msgstr "د انتظار میندی"
+
+msgid "approved"
+msgstr "منظور شوي"
+
+msgid "rejected"
+msgstr "رد شوي"
+
+msgid "Application approved successfully"
+msgstr "د غوښتنې بریالي منظورولي"
+
+msgid "Application rejected successfully"
+msgstr "د غوښتنې بریالي رد کول"
+
+msgid "Welcome to BazarAF!"
+msgstr "بازاراف ته خوش راغلاست!"
+
+msgid "Loading..."
+msgstr "سره بار کیږي..."
+
+msgid "Error"
+msgstr "خرابي"
+
+msgid "Success"
+msgstr "بریالي"
+
+msgid "Search"
+msgstr "لټون"
+
+msgid "Filter"
+msgstr "چاڼنه"
+
+msgid "Submit"
+msgstr "واستول"
+
+msgid "Cancel"
+msgstr "منسوخ کول"
+
+msgid "Save"
+msgstr "خوندي کول"
+
+msgid "Back"
+msgstr "بیرته"
+
+msgid "Next"
+msgstr "بل"
+
+msgid "Previous"
+msgstr "مخکې"
+
+msgid "Dashboard"
+msgstr "ډیش بورډ"
+
+msgid "Products"
+msgstr "توليدات"
+
+msgid "Orders"
+msgstr "آرډرونه"
+
+msgid "Sellers"
+msgstr "پلورونکي"
+
+msgid "Reviews"
+msgstr "بيانات"
+
+msgid "Settings"
+msgstr "تنظيمات"
+
+msgid "Profile"
+msgstr "پروفايل"
+
+msgid "Logout"
+msgstr "بهر ولاړ شي"
+
+msgid "Login"
+msgstr "ننوتل"
+
+msgid "Register"
+msgstr "راجسټر شي"
